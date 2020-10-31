@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+//custom widgets
+import '../widgets/order_card.dart';
+
 class OrderPage extends StatefulWidget {
   _OrderPageState createState() => _OrderPageState();
 }
@@ -7,8 +10,11 @@ class OrderPage extends StatefulWidget {
 class _OrderPageState extends State<OrderPage> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text("Order Page"),
-    );
+    return ListView(
+        padding: EdgeInsets.symmetric(horizontal: 10.0),
+        scrollDirection: Axis.vertical,
+        children: <Widget>[
+          OrderCard(),
+        ]);
   }
 }
