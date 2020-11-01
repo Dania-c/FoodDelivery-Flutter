@@ -6,7 +6,8 @@ class OrderCard extends StatelessWidget {
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(10.0),
-        child: Row(children: <Widget>[
+        child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: <
+            Widget>[
           Container(
               height: 75.0,
               width: 45.0,
@@ -50,6 +51,50 @@ class OrderCard extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(width: 20.0),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text("Grilled Chickend",
+                  style:
+                      TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold)),
+              SizedBox(height: 5.0),
+              Text("3.0",
+                  style: TextStyle(fontSize: 16.0, color: Colors.orangeAccent)),
+              SizedBox(height: 5.0),
+              Container(
+                height: 25.0,
+                width: 120.0,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    Container(
+                      margin: EdgeInsets.only(right: 10.0),
+                      child: Row(
+                        children: <Widget>[
+                          Text("chicken",
+                              style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold)),
+                          SizedBox(width: 5.0),
+                          InkWell(
+                            onTap: () {},
+                            child: Text("x",
+                                style: TextStyle(
+                                    color: Colors.red,
+                                    fontWeight: FontWeight.bold)),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          Spacer(),
+          GestureDetector(
+              onTap: () {}, child: Icon(Icons.cancel, color: Colors.grey)),
         ]),
       ),
     );
