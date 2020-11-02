@@ -13,9 +13,10 @@ class _OrderPageState extends State<OrderPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue[200],
       appBar: AppBar(
         title: Text(
-          "Your Food Cart",
+          "Talabetak  Cart",
           style: TextStyle(color: Colors.black),
         ),
         centerTitle: true,
@@ -26,6 +27,9 @@ class _OrderPageState extends State<OrderPage> {
           padding: EdgeInsets.symmetric(horizontal: 10.0),
           scrollDirection: Axis.vertical,
           children: <Widget>[
+            OrderCard(),
+            OrderCard(),
+            OrderCard(),
             OrderCard(),
             OrderCard(),
           ]),
@@ -43,6 +47,7 @@ class _OrderPageState extends State<OrderPage> {
       ),
       child: Column(
         children: <Widget>[
+          SizedBox(height: 20.0),
           Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -50,7 +55,7 @@ class _OrderPageState extends State<OrderPage> {
               Text(
                 "Subtotal",
                 style: TextStyle(
-                    color: Color(0xFF9BA7C6),
+                    color: Colors.black45,
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold),
               ),
@@ -73,7 +78,7 @@ class _OrderPageState extends State<OrderPage> {
               Text(
                 "Discount",
                 style: TextStyle(
-                    color: Color(0xFF9BA7C6),
+                    color: Colors.black45,
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold),
               ),
@@ -96,7 +101,7 @@ class _OrderPageState extends State<OrderPage> {
               Text(
                 "Tax",
                 style: TextStyle(
-                    color: Color(0xFF9BA7C6),
+                    color: Colors.black45,
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold),
               ),
@@ -125,7 +130,7 @@ class _OrderPageState extends State<OrderPage> {
               Text(
                 "Cart Total",
                 style: TextStyle(
-                    color: Color(0xFF9BA7C6),
+                    color: Colors.black45,
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold),
               ),

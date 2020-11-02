@@ -87,6 +87,44 @@ class OrderCard extends StatelessWidget {
                         ],
                       ),
                     ),
+                    Container(
+                      margin: EdgeInsets.only(right: 10.0),
+                      child: Row(
+                        children: <Widget>[
+                          Text("chicken",
+                              style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold)),
+                          SizedBox(width: 5.0),
+                          InkWell(
+                            onTap: () {},
+                            child: Text("x",
+                                style: TextStyle(
+                                    color: Colors.red,
+                                    fontWeight: FontWeight.bold)),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(right: 10.0),
+                      child: Row(
+                        children: <Widget>[
+                          Text("chicken",
+                              style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold)),
+                          SizedBox(width: 5.0),
+                          InkWell(
+                            onTap: () {},
+                            child: Text("x",
+                                style: TextStyle(
+                                    color: Colors.red,
+                                    fontWeight: FontWeight.bold)),
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),

@@ -8,7 +8,7 @@ class SearchField extends StatelessWidget {
       borderRadius: BorderRadius.circular(30.0),
       child: TextField(
         decoration: InputDecoration(
-            hintText: "Search any food",
+            hintText: "lyom 3abele...",
             suffixIcon: Material(
               elevation: 5.0,
               borderRadius: BorderRadius.circular(30.0),
